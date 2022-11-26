@@ -1,0 +1,10 @@
+{
+  "@context": "schema.jsonld",
+  "@graph": [
+    {
+      "@id": "http://nccn-guideline.org/nsclc/0",
+      "@type": "nccn:node",
+      "nccn:content": "Stage IA (peripheral T1abc, N0)",
+    }
+  ]
+}
