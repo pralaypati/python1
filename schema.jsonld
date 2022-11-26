@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "nccn": "http://nccn-guideline.org/nsclc#"
+  },
+  "@graph": [
+    {
+      "@id": "nccn:content",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Content of a node.",
+      "rdfs:label": "content",
+      "schema:domainIncludes": {
+          "@id": "nccn:node"
+      },
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
+      "@id": "nccn:node",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Treatment recommendation node.",
+      "rdfs:label": "node",
+      "rdfs:subClassOf": {
+        "@id": "schema:Thing"
+      }
+    }
+  ]
+}
